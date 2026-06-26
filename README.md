@@ -63,21 +63,21 @@ All trained models significantly outperformed the baseline, confirming that the 
 
 ## Results (Log Space)
 
-| Model                   | MAE    | RMSE   |
-| ----------------------- | ------ | ------ |
-| XGBoost                 | 0.0739 | 0.1053 |
-| Gradient Boosting       | 0.0749 | 0.1119 |
-| Linear Regression       | 0.0803 | 0.1157 |
-| Ridge                   | 0.0804 | 0.1163 |
-| Random Forest           | 0.0839 | 0.1216 |
-| ElasticNet              | 0.0883 | 0.1264 |
-| Lasso                   | 0.0913 | 0.1295 |
-| Neural Network          | 0.1581 | 0.2251 |
-| Baseline MEAN Predictor | 0.3395 | 0.4326 |
+| Model (dollars)         | MAE   | RMSE  |
+| ----------------------- | ----- | ----- |
+| XGBoost                 | 14047 | 23004 |
+| Gradient Boosting       | 14218 | 26121 |
+| Linear Regression       | 15989 | 27049 |
+| Ridge                   | 16049 | 30525 |
+| Random Forest           | 16096 | 31094 |
+| ElasticNet              | 17976 | 33886 |
+| Lasso                   | 18532 | 34274 |
+| Neural Network          | 27852 | 45257 |
+| Baseline MEAN Predictor | 63733 | 92955 |
 
-## Key Findings
+Key Findings
 
-* Gradient boosting methods (XGBoost, Gradient Boosting) achieved the best performance, confirming their strength for structured tabular data.
+* Gradient boosting methods (XGBoost, Gradient Boosting) achieved the best performance, confirming their strength for structured tabular data. The best performing model was **XGBoost**, achieving a **MAE** of $14047, which is a 78% improvment over the naive **Mean Predictor** .
 * Linear models performed surprisingly well, indicating that feature engineering successfully captured much of the underlying linear structure.
 * Neural networks underperformed, highlighting their limitations on smaller tabular datasets without large-scale data or tuning.
 
